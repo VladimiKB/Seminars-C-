@@ -17,3 +17,4 @@ if (number > 0)
         count++;
     }
 }
+else Console.Write("Неверное число");
