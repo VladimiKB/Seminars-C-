@@ -10,7 +10,7 @@ Console.WriteLine("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 int secondDigit = SecondDigit(number);
-Console.WriteLine($"Искомое двухзначное число = {secondDigit}");
+Console.WriteLine($"Вторая цифра введенного числа = {secondDigit}");
 
 int SecondDigit(int num)
 {
