@@ -13,7 +13,7 @@ int exponent = a;
 
 for (int i = 1; i < b; i++)
 {
-exponent *= a;
+    exponent *= a;
 }
 Console.WriteLine("A в степени B равно: " + exponent);
 
