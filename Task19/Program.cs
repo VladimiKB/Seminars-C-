@@ -11,8 +11,17 @@
 // string reverse = string.Concat(number.Reverse());
 // Console.WriteLine(number == reverse ? "палиндром" : "не палиндром");
 
+// Console.WriteLine("Введите пятизначное число: ");
+// int number = int.Parse(Console.ReadLine());
+// int rev = 0, num = number;
+// while (number > 0)
+// {
+//     rev = rev * 10 + number % 10; number /= 10;
+// }
+// Console.WriteLine(num == rev ? "палиндром" : "не палиндром");
+
 Console.WriteLine("Введите пятизначное число: ");
-int number = int.Parse(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 int rev = 0, num = number;
 while (number > 0)
 {
