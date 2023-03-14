@@ -13,6 +13,17 @@ int[] arr = CreateArrayRndInt(length, min, max);
 OutputArray(arr);
 
 int number = Prompt("введите искомое число: ");
+
+// bool res = FindNumber (number, arr);
+// if (res == true)
+// {
+// Console.WriteLine ($"Число {number} найдено");
+// }
+// else
+// {
+// Console. WriteLine ($"Число {number} не найдено");
+// }
+
 Console.WriteLine(FindNumber(number, arr)
     ? $"Число {number} найдено"
     : $"Число {number} не найдено");
