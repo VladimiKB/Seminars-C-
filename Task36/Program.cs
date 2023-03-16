@@ -42,7 +42,7 @@ int SumElemOddPosition(int[] arr)
     int sum = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i % 2 == 0) sum += arr[i];
+        if (i % 2 != 0) sum += arr[i];
     }
     return sum;
 }
@@ -51,4 +51,4 @@ int[] array = CreateArrayRndInt(size, min, max);
 ArrayPrinted(array);
 
 int sumElemOddPosition = SumElemOddPosition(array);
-Console.WriteLine($"Сумма элементов на четных позициях = {sumElemOddPosition}");
+Console.WriteLine($"Сумма элементов на нечетных позициях = {sumElemOddPosition}");
