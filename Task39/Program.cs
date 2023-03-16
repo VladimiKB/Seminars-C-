@@ -44,3 +44,6 @@ int[] array = CreateArrayRndInt(5, 1, 10);
 PrintArray(array);
 ReverseArray(array);
 PrintArray(array);
+
+Array.Reverse(array); // - встроенный метод, еще раз развернули и получили исходный массив
+PrintArray(array);
