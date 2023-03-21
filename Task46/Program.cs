@@ -24,12 +24,12 @@ void PrintMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        Console.Write("[");
+        Console.Write("["); // без обрамления - удалить эту строку
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             Console.Write($"{matrix[i, j], 4} ");
         }
-        Console.WriteLine("]");
+        Console.WriteLine("]"); // без обрамления - Console.WriteLine();
     }
 }
 
