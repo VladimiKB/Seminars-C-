@@ -16,6 +16,7 @@ int endValue = Prompt($"Введите конец диапазона случа�
 
 double[,] CreateMatrixRndRealNum(int rows, int columns, int min, int max)
 {
+    Random rnd = new Random { };
     double[,] matrix = new double[rows, columns];
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
