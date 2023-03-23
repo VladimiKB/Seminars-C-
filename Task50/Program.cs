@@ -17,12 +17,19 @@ Console.WriteLine("Введите номер столбца");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine();
 
-int[,] matrix = new int[10, 10];
+int row = 10;
+int col = 10;
+int minValue = -100;
+int maxValue = 100;
 
-int[,] array2d = CreateMatrixRndInt(10, 10, -100, 100);
+
+int[,] array2d = CreateMatrixRndInt(row, col, minValue, maxValue);
 PrintMatrix(array2d);
 Console.WriteLine();
+SearchElementByIndexes(array2d);
 
+void SearchElementByIndexes(int[,] matrix)
+{
 if (n > matrix.GetLength(0) || m > matrix.GetLength(1))
 {
     Console.WriteLine("Такого элемента нет");
@@ -31,15 +38,17 @@ else
 {
     Console.WriteLine($"Значение элемента {n} строки и {m} столбца = {matrix[n-1,m-1]}");
 }
+}
 
 int[,] CreateMatrixRndInt(int rows, int columns, int min, int max)
 {
+    int[,] matrix = new int[row, col];
     Random rnd = new Random { };
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = rnd.Next(-100, 100);
+            matrix[i, j] = rnd.Next(minValue, maxValue);
         }
     }
     return matrix;
