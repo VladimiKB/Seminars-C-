@@ -60,7 +60,7 @@ int Prompt(string text)
 
 void ReplaceRowWithColumn(int[,] matr)
 {
-       for (int i = 0; i < matr.GetLength(0) - 1; i++)
+    for (int i = 0; i < matr.GetLength(0) - 1; i++)
     {
         for (int j = i + 1; j < matr.GetLength(1); j++)
         {
