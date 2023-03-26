@@ -41,7 +41,7 @@ void ReplaceFirstLastRow(int[,] matrix)
     int lastRow = matrix.GetLength(0) - 1;
     for (int i = 0; i < matrix.GetLength(1); i++)
     {
-       int temp = matrix[firstRow, i];
+        int temp = matrix[firstRow, i];
         matrix[firstRow, i] = matrix[lastRow, i];
         matrix[lastRow, i] = temp;
     }
