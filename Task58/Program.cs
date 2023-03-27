@@ -35,7 +35,7 @@ PrintMatrix(resultMatrix);
 Console.WriteLine();
 
 int[,] MultiplyMatrix(int[,] matrixA, int[,] matrixB)
-{ 
+{
     if (matrixA.GetLength(1) != matrixB.GetLength(0)) throw new Exception("Матрицы нельзя перемножать.");
     int[,] resultMatrix = new int[rowA, colB];
     for (int i = 0; i < matrixA.GetLength(0); i++)
@@ -44,7 +44,7 @@ int[,] MultiplyMatrix(int[,] matrixA, int[,] matrixB)
         {
             for (int k = 0; k < matrixB.GetLength(0); k++)
             {
-                resultMatrix[i, j] += matrixA[i, k] * matrixB[k, j];  
+                resultMatrix[i, j] += matrixA[i, k] * matrixB[k, j];
             }
         }
     }
