@@ -7,3 +7,29 @@
 
 Console.Clear();
 
+Console.WriteLine("Введите целое число М: ");
+int numberM = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите целое число N: ");
+int numberN = Convert.ToInt32(Console.ReadLine());
+
+NaturalNumbersRange(numberM, numberN);
+
+void NaturalNumbersRange(int numM, int numN)
+{
+    if (numM == numN)
+    {
+        Console.Write($"{numM}");
+        return;
+    }
+    if (numM < numN)
+    {
+        Console.Write($"{numM} ");
+        NaturalNumbersRange(numM + 1, numN);
+    }
+    else
+    {
+        Console.Write($"{numM} ");
+        NaturalNumbersRange(numM - 1, numN);
+    }
+}
