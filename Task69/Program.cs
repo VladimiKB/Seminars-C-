@@ -7,3 +7,18 @@
 
 Console.Clear();
 
+int Power(int numA, int numB)
+{
+if (numB == 0) return 1;
+else return numA * Power(numA, numB - 1);
+}
+
+Console.WriteLine("Input number A:");
+int numberA = Convert. ToInt32(Console. ReadLine ());
+
+Console.WriteLine("Input number B:");
+int numberB = Convert. ToInt32(Console. ReadLine ());
+
+
+int pow = Power(numberA, numberB);
+Console.WriteLine($"{numberA} в степени {numberB} = {pow}");
