@@ -15,21 +15,43 @@ int numberN = Convert.ToInt32(Console.ReadLine());
 
 NaturalNumbersRange(numberM, numberN);
 
+// РЕКУРСИВНЫЙ МЕТОД
+
+// void NaturalNumbersRange(int numM, int numN)
+// {
+//     if (numM == numN)
+//     {
+//         Console.Write($"{numM}");
+//         return;
+//     }
+//     if (numM < numN)
+//     {
+//         Console.Write($"{numM} ");
+//         NaturalNumbersRange(numM + 1, numN);
+//     }
+//     else
+//     {
+//         Console.Write($"{numM} ");
+//         NaturalNumbersRange(numM - 1, numN);
+//     }
+// }
+
+// МЕТОД 2
+
 void NaturalNumbersRange(int numM, int numN)
 {
-    if (numM == numN)
-    {
-        Console.Write($"{numM}");
-        return;
-    }
     if (numM < numN)
     {
         Console.Write($"{numM} ");
         NaturalNumbersRange(numM + 1, numN);
     }
-    else
+    else if (numM > numN)
     {
         Console.Write($"{numM} ");
         NaturalNumbersRange(numM - 1, numN);
+    }
+    else
+    {
+        Console.Write($"{numM}");
     }
 }
