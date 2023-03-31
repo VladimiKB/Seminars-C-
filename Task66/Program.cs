@@ -25,17 +25,14 @@ int SumNaturalNumbers(int numM, int numN)
 {
     if (numM == numN)
     {
-        //Console.Write($"{numM}");
         return numM;
     }
     if (numM < numN)
     {
-        //Console.Write($"{numM} ");
         return numM + SumNaturalNumbers(numM + 1, numN);
     }
     else
     {
-        //Console.Write($"{numM} ");
         return numN + SumNaturalNumbers(numM, numN + 1);
     }
 }
